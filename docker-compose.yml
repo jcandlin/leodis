@@ -5,5 +5,5 @@ services:
    image: jcandlin/leodis:1.0.0
    container_name: leodis
    ports:
-    - 8080:80
+    - 80:80
     - 443:443
