@@ -22,7 +22,7 @@ env APACHE_LOCK_DIR    /var/lock/apache2
 env APACHE_SERVERADMIN jon.candlin@gmail.com
 env APACHE_SERVERNAME www.leodis.ac.uk
 
-RUN chown -R www-data:www-data /var/log/apache2
+RUN usermod -a -G adm www-data
 
 EXPOSE 80
 
