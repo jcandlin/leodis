@@ -2,8 +2,12 @@ version: '2'
 services:
 
   web: 
-   image: jcandlin/leodis:1.0.0
+   image: jcandlin/leodis:1.1.0
    container_name: leodis
    ports:
     - 80:80
     - 443:443
+   volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+   environment:
+      - VIRTUAL_HOST=localhost
