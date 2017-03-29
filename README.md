@@ -27,4 +27,6 @@ the backend estate/farm are all identical servers?
 [Tue Mar 28 11:12:30.125806 2017] [proxy:error] [pid 15:tid 140521397745408] AH00959: ap_proxy_connect_backend disabling worker for (localhost) for 60s
 [Tue Mar 28 11:12:30.125814 2017] [proxy_http:error] [pid 15:tid 140521397745408] [client 94.4.247.42:55577] AH01114: HTTP: failed to make connection to backend: localhost
 
+root@07929a8c061c:/# curl http://localhost:1337
+curl: (7) Failed to connect to localhost port 1337: Connection refused
 www.leodis.ac.uk:80 94.4.247.42 - - [28/Mar/2017:11:12:33 +0000] "GET / HTTP/1.1" 503 569 "-"
